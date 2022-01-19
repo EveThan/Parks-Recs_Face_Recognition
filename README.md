@@ -16,15 +16,9 @@ The model is not that effective in recognizing multiple people in the same frame
 https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/
 https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/preprocess_input
 https://www.kaggle.com/acharyarupak391/vggfaceweights
-https://medium.com/analytics-vidhya/how-to-implement-face-recognition-using-vgg-face-in-python-3-8-and-tensorflow-2-0-a0593f8c95c3
 https://keras.io/api/layers/reshaping_layers/zero_padding2d/
-https://towardsdatascience.com/intuitively-understanding-convolutions-for-deep-learning-1f6f42faee1
-http://man.hubwiz.com/docset/TensorFlow.docset/Contents/Resources/Documents/api_docs/python/tf/keras/backend/eval.html
-https://ai.stackexchange.com/questions/31675/what-is-better-to-use-early-stopping-model-checkpoint-or-both
 https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping
 https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
 https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
 https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
 https://github.com/opencv/opencv/tree/master/data/haarcascades
-https://stackoverflow.com/questions/50963283/python-opencv-imshow-doesnt-need-convert-from-bgr-to-rgb
-https://dsp.stackexchange.com/questions/28283/should-i-use-cv-haar-scale-image-while-using-lbp-cascadeclassifier
