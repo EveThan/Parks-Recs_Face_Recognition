@@ -14,7 +14,7 @@ To create a classification model that is able to recognize 5 characters from the
 The training set contains 10 images from each of the 5 characters while the validation set contains 3 images from each of the 5 characters. Hence, there are altogether 50 images in the training set and 15 images in the validation set. The images are obtained from Google and cropped into squares around the characters' faces.
 
 ## Approaches
-A convolutional neural network is created based on the layer structure defined in https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf. The structure is based on a research paper from the Oxford Visual Geometry Group. The model has 22 layers and 37 deep units and the last layer consists of 2622 nodes. The model is loaded with the trained VGG face weights. The model is later trained on the images of the 5 Parks & Recreation characters using neural network again with Haar cascade. The model has an accuracy of 60%.
+A convolutional neural network is created based on the layer structure defined in https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf. The structure is based on a research paper from the Oxford Visual Geometry Group. The model has 22 layers and 37 deep units and the last layer consists of 2622 nodes. The model is loaded with the trained VGG face weights. The model is later trained on the images of the 5 Parks & Recreation characters using neural network again with Haar cascade. The model has an validation accuracy of 60%.
 
 ## Comments
 The model is not that effective in recognizing multiple people in the same frame. It also for some reason doesn't recognize Garry throughout the whole video.
