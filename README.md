@@ -11,7 +11,7 @@ Code: https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?
 To create a classification model that is able to recognize 5 characters from the Parks & Recreation show. The 5 characters are Leslie, Ann, Ron, Tom, and Garry.
 
 ## Dataset
-The training set contains 10 images from each of the 5 characters while the validation set contains 3 images from each of the 5 characters. Hence, there are altogether 50 images in the training set and 15 images in the validation set. The images are obtained from Google and cropped into a square around the each of the characters' face.
+The training set contains 10 images from each of the 5 characters while the validation set contains 3 images from each of the 5 characters. Hence, there are altogether 50 images in the training set and 15 images in the validation set. The images are obtained from Google and cropped into squares around the characters' faces.
 
 ## Approaches
 A convolutional neural network is created based on the layer structure defined in https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf. The structure is based on a research paper from the Oxford Visual Geometry Group. The model has 22 layers and 37 deep units and the last layer consists of 2622 nodes. The model is loaded with the trained VGG face weights. The model is later trained on the images of the 5 Parks & Recreation characters using neural network again with Haar cascade. The model has an accuracy of 60%.
