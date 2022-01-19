@@ -1,4 +1,9 @@
-
+<p align="center">
+  <img width="852" alt="leslie_ann_box" src="https://user-images.githubusercontent.com/46462603/150107145-92985cef-6878-4404-be8c-696e3d5c6013.png">
+<img width="854" alt="leslie_box" src="https://user-images.githubusercontent.com/46462603/150107163-72e25c6f-c3d2-48cb-9437-8ead0f855e49.png">
+<img width="852" alt="ron_box" src="https://user-images.githubusercontent.com/46462603/150107180-dc581cba-fda8-4399-b5ba-95b994637812.png">
+<img width="854" alt="tom_box" src="https://user-images.githubusercontent.com/46462603/150107197-7300e0f8-6f19-412d-84fb-76ffe993d4f4.png">
+</p>
 
 ## Goal
 To create a classification model that is able to recognize 5 characters from the Parks & Recreation show. The 5 characters are Leslie, Ann, Ron, Tom, and Garry.
