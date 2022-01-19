@@ -1,5 +1,4 @@
-Code: https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?usp=sharing
-The ipynb file is too large to be uploaded to GitHub
+Code: https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?usp=sharing. The ipynb file is too large to be uploaded to GitHub
 
 <p align="center">
   <img width="852" alt="leslie_ann_box" src="https://user-images.githubusercontent.com/46462603/150107145-92985cef-6878-4404-be8c-696e3d5c6013.png">
