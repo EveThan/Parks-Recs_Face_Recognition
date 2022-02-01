@@ -12,6 +12,9 @@ These are screenshots of the resulting video frames.
 
 <br>
 
+## Goal
+To create a classification model that is able to recognize 5 characters from a Parks & Recreation video. The 5 characters are Leslie, Ann, Ron, Tom, and Garry.
+
 ## Worksite
 The code can be found at <a href="https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?usp=sharing" target="_blank">Parks & Recs Face Recognition on Google Colab</a>. The project ipynb file is too large to be uploaded to GitHub. Similarly, the pre-trained face model weights file <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a> is too large to be uploaded here.
 
@@ -22,9 +25,6 @@ The code can be found at <a href="https://colab.research.google.com/drive/1AGaIL
 - <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/blob/main/ice_rink.mp4" target="_blank">ice_rink.mp4</a>
 - <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/blob/main/haarcascade_frontalface_alt2.xml" target="_blank">haarcascade_frontalface_alt2.xml</a> which can also be found <a href="https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml" target="_blank">here</a> 
 - <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>
-
-## Goal
-To create a classification model that is able to recognize 5 characters from a Parks & Recreation video. The 5 characters are Leslie, Ann, Ron, Tom, and Garry.
 
 ## Dataset
 The training set contains 10 images from each of the 5 characters while the validation set contains 3 images from each of the 5 characters. Hence, there are altogether 50 images in the training set and 15 images in the validation set. The images are obtained from Google and cropped into squares around the characters' faces. The photos are randomly chosen. However, I tried to pick photos that show different angles of the characters to make sure that the model is trained with as many different angles of the characters' faces as possible. 
@@ -39,18 +39,26 @@ As the original VGG-Face model was trained on the WildFace dataset, we remove th
 In order to detect and locate multiple faces in an image, cv2.CascadeClassifier is loaded with <a href="https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml" target="_blank">haarcascade_frontalface_alt2.xml</a>. Overall, the model has an validation accuracy of 60%. The model is later tested on the video <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/blob/main/ice_rink.mp4" target="_blank">ice_rink.mp4</a>. 
 
 ## Comments
-The model is not that effective in recognizing multiple people in the same frame. It also for some reason doesn't recognize Garry throughout the whole video. Did the model somehow learn that Garry is a character that is always being ignored in the show? 😆
-
-Will the model perform better if it is trained on more photos of these characters?
+The model is not that effective in recognizing multiple people in the same frame. It also for some reason doesn't recognize Garry throughout the whole video. Did the model somehow learn that Garry is a character that is always being ignored in the show? 😆 It might be worth testing to see whether the model would perform better if it is trained on more photos of these characters.
 
 ## References
+- Deep Face Recognition with Keras <br>
 https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/
-https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/preprocess_input
-https://www.kaggle.com/acharyarupak391/vggfaceweights
-https://keras.io/api/layers/reshaping_layers/zero_padding2d/
-https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping
-https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
-https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
-https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
-https://github.com/opencv/opencv/tree/master/data/haarcascades
+- Face Recognition with VGG-Face in Keras
 https://medium.com/analytics-vidhya/face-recognition-with-vgg-face-in-keras-96e6bc1951d5
+- tf.keras.applications.vgg16.preprocess_input <br>
+https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/preprocess_input
+- vgg-face-weights <br>
+https://www.kaggle.com/acharyarupak391/vggfaceweights
+- haarcascade_frontalface_alt2.xml <br>
+https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml
+- ZeroPadding2D layer <br>
+https://keras.io/api/layers/reshaping_layers/zero_padding2d/
+- tf.keras.callbacks.EarlyStopping <br>
+https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping
+- A Gentle Introduction to Dropout for Regularizing Deep Neural Networks <br>
+https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks/
+- A Gentle Introduction to Batch Normalization for Deep Neural Networks <br>
+https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
+- Cascade Classifier <br>
+https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
