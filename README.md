@@ -15,12 +15,13 @@ These are screenshots of the resulting video frames.
 ## Worksite
 The code can be found at <a href="https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?usp=sharing" target="_blank">Parks & Recs Face Recognition on Google Colab</a>. The project ipynb file is too large to be uploaded to GitHub. Similarly, the pre-trained face model weights file <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a> is too large to be uploaded here.
 
-## Files/folders needed to run the program
-- 
-- 
-- 
--
--
+## Code, files, or folders needed to run the program
+-  <a href="https://colab.research.google.com/drive/1AGaILQMbOncFIG1UvSsFH7Q_OQ9ck4n8?usp=sharing" target="_blank">Parks & Recs Face Recognition on Google Colab</a>
+- <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/tree/main/train" target="_blank">train</a>
+- <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/tree/main/val" target="_blank">val</a>
+- <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/blob/main/ice_rink.mp4" target="_blank">ice_rink.mp4</a>
+- <a href="https://github.com/ZhengEnThan/Parks-Recs_Face_Recognition/blob/main/haarcascade_frontalface_alt2.xml" target="_blank">haarcascade_frontalface_alt2.xml</a> which can also be found <a href="https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml" target="_blank">here</a> 
+- <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>
 
 ## Goal
 To create a classification model that is able to recognize 5 characters from a Parks & Recreation video. The 5 characters are Leslie, Ann, Ron, Tom, and Garry.
