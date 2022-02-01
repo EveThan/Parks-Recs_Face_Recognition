@@ -44,7 +44,7 @@ The model is not that effective in recognizing multiple people in the same frame
 ## References
 - Deep Face Recognition with Keras <br>
 https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/
-- Face Recognition with VGG-Face in Keras
+- Face Recognition with VGG-Face in Keras <br>
 https://medium.com/analytics-vidhya/face-recognition-with-vgg-face-in-keras-96e6bc1951d5
 - tf.keras.applications.vgg16.preprocess_input <br>
 https://www.tensorflow.org/api_docs/python/tf/keras/applications/vgg16/preprocess_input
