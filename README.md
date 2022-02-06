@@ -41,7 +41,18 @@ To test the model on a new Parks and Recreation clip:
 - Run this cell. Each frame of the video will be displayed one by one with the faces of characters that are recognized framed and labelled. 
 
 ## What have I learned 
-- 
+- Used tensorflow.keras to create multiple convolutional layers with zero padding and max pooling to define a VGG-Face model with the pre-learned weights <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>.
+- Loaded images from different directories and preprocessed the images by resizing them and feeding them to the VGG-Face model.
+- Used the <a href="https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml" target="_blank">Haar cascade module</a> to recognize and locate faces in a given photo or video frame.
+- Used tensorflow.keras to create dense layers with batch normalization and dropout and trained this model with ModelCheckpoint and EarlyStopping to recognize the character faces.
+- Used OpenCV or cv2 to draw rectangles around recognized faces and label them.
+
+## Main libraries or modules used
+- cv2
+- sklearn
+- matplotlib 
+- numpy
+- tensorflow.keras
 
 ## Approaches
 In this project, the VGG-Face model is used and loaded with the trained weights in <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>. A convolutional neural network is created based on the layer structure defined in <a href="https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/" target="_blank">Deep Face Recognition with Keras</a>. The model has 22 layers and the last layer consists of 2622 nodes. 
@@ -74,3 +85,5 @@ https://machinelearningmastery.com/dropout-for-regularizing-deep-neural-networks
 https://machinelearningmastery.com/batch-normalization-for-training-of-deep-neural-networks/
 - Cascade Classifier <br>
 https://docs.opencv.org/3.4/db/d28/tutorial_cascade_classifier.html
+
+~ Project created in December 2021 ~
