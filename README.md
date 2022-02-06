@@ -2,7 +2,7 @@
 
 <br>
 
-These are screenshots of the resulting video frames.
+These are some screenshots of the resulting video frames.
 <p align="center">
   <img width="852" alt="leslie_ann_box" src="https://user-images.githubusercontent.com/46462603/150107145-92985cef-6878-4404-be8c-696e3d5c6013.png">
 <img width="854" alt="leslie_box" src="https://user-images.githubusercontent.com/46462603/150107163-72e25c6f-c3d2-48cb-9437-8ead0f855e49.png">
