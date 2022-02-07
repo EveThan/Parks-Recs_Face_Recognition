@@ -40,7 +40,7 @@ To test the model on a new Parks and Recreation clip:
   ```
 - Run this cell. Each frame of the video will be displayed one by one with the faces of characters that are recognized framed and labelled. 
 
-## What have I learned 
+## What I have learned 
 - Used tensorflow.keras to create multiple convolutional layers with zero padding and max pooling to define a VGG-Face model with the pre-learned weights <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>.
 - Loaded images from different directories and preprocessed the images by resizing them and feeding them to the VGG-Face model.
 - Used the <a href="https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt2.xml" target="_blank">Haar cascade module</a> to recognize and locate faces in a given photo or video frame.
