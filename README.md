@@ -1,4 +1,4 @@
-# Parks and Recreation Characters Face Recognition in Video
+# Parks and Recreation Characters Face Recognition in Video using VGG-Face Model
 
 <br>
 
