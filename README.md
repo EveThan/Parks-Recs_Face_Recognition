@@ -55,7 +55,7 @@ To test the model on a new Parks and Recreation clip:
 - tensorflow.keras
 
 ## Approaches
-In this project, the VGG-Face model is used and loaded with the trained weights in <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>. A convolutional neural network is created based on the layer structure defined in <a href="https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/" target="_blank">Deep Face Recognition with Keras</a>. The model has 22 layers and the last layer consists of 2622 nodes. 
+In this project, the VGG-Face model is used and loaded with the trained weights in <a href="https://www.kaggle.com/acharyarupak391/vggfaceweights" target="_blank">vgg_face_weights.h5</a>. A convolutional neural network is created based on the layer structure defined in <a href="https://sefiks.com/2018/08/06/deep-face-recognition-with-keras/" target="_blank">Deep Face Recognition with Keras</a>. The model has 16 convolutional layers and the last layer consists of 2622 nodes. 
 
 As the original VGG-Face model weights were trained on the WildFace dataset, we remove the last layer of the model to fit the model onto our own dataset. Hence, our VGG-Face model will not be able to produce a prediction yet as its second last layer will only produce some numerical representations of the input images which are called embeddings. We can add one or more layers to finish the model so that it can produce predictions as probabilities. In this project, I added another 5 layers with the last layer having a Sigmoid function as its activation function to finish the model. The last layer has 5 nodes or units because it needs to produce probabilities for 5 characters for a given image input. 
 
